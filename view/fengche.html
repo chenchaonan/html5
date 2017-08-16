@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风车</title>
+    <style>
+        .box{
+            position: relative;
+            width:600px;
+            height:600px;
+            border:1px solid #e0e0df;
+            margin: 0 auto;
+        }
+        .line{
+            margin:15% auto 0;
+            width:0;
+            height:0;
+            border-width: 180px 20px;
+            border-color:transparent transparent saddlebrown;
+            border-style: solid;
+        }
+        .move{
+            position: absolute;
+            width:150px;
+            height:150px;
+            top:50%;
+            left:50%;
+            margin: -75px 0 0 -75px;
+            animation: circle 5s linear infinite;
+        }
+        .move span:nth-of-type(1){
+            position: absolute;
+            z-index: 10;
+            margin:-10px 0 0 -10px;
+            top:50%;
+            left:50%;
+            border:10px solid;
+            border-color: #2a2a2a red;
+            border-radius:50%;
+        }
+        .item{
+            position: absolute;
+            border-width: 30px 70px;
+            border-color: transparent seagreen seagreen transparent;
+            border-style: solid;
+        }
+        .item:nth-of-type(2){
+            top:17px;
+            left:-65px;
+        }
+        .item:nth-of-type(3){
+            z-index: 1;
+            transform: rotate(-90deg);
+            top:117px;
+            left:-25px;
+            border-color: transparent yellow yellow transparent;
+        }
+        .item:nth-of-type(4){
+            z-index: 2;
+            transform: rotate(-180deg);
+            top:77px;
+            left:75px;
+            border-color: transparent #ed3a3a #ed3a3a transparent;
+        }
+        .item:nth-of-type(5){
+            z-index: 3;
+            transform: rotate(90deg);
+            top:-23px;
+            left:35px;
+            border-color: transparent mediumslateblue mediumslateblue transparent;
+        }
+
+        @keyframes circle {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        input:nth-of-type(1):focus ~.move{animation-play-state: paused;}
+        input:nth-of-type(2):focus ~.move{animation-play-state: running;}
+
+        input:nth-of-type(3):focus ~.move{animation-duration: 4s;}
+        input:nth-of-type(4):focus ~.move{animation-duration: 0.1s;}
+        /*.s2{*/
+            /*margin:0 auto;*/
+            /*width:0;*/
+            /*height:0;*/
+            /*border:20px solid transparent;*/
+            /*border-bottom: 150px solid saddlebrown;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="box">
+    <input type="button" value="暂停">
+    <input type="button" value="开始">
+    <input type="button" value="慢速">
+    <input type="button" value="快速">
+    <div class="line"></div>
+    <div class="move">
+        <span></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</div>
+</body>
+</html>

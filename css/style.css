@@ -1,0 +1,431 @@
+html{
+    font-size: 100px;
+}
+@media screen and (max-width: 414px){
+    html{
+        font-size: 64.6875px;
+    }
+}
+@media screen and (max-width: 412px){
+    html{
+        font-size: 64.375px;
+    }
+}
+@media screen and (max-width: 375px){
+    html{
+        font-size: 58.59375px;
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 50px;
+    }
+}
+html,body{
+    overflow-x: hidden;
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    max-width: 640px;
+    background: #f1f0f0;
+}
+header{
+    position: relative;
+    z-index: 2;
+    box-shadow:0 2px 5px rgba(0,0,0,0.35) ;
+    height:1.12rem;
+    background: #252525;
+}
+.icon{
+    background: url("../images/icon.png") no-repeat;
+    background-size: 3rem 6rem;
+}
+header .logo{
+    position: relative;
+    z-index: 3;
+    float: left;
+    width:2.1rem;
+    height:0.62rem;
+    margin:0.23rem 0 0 0.15rem;
+    background-position:0 0 ;
+}
+header nav{
+    float: right;
+    margin: 0.4rem 0.23rem 0 0;
+    width: 0.36rem;
+    height: 0.32rem;
+}
+header nav .list{
+    display: block;
+    width:0.36rem;
+    height:0.32rem;
+    background-position: -0.88rem -0.98rem;
+}
+
+header nav ul{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding-top: 1.04rem;
+    background: #252525;
+}
+header nav ul:before{
+    content: "";
+    position: absolute;
+    width:0.2rem;
+    height:0.2rem;
+    top:0.48rem;
+    right:0.3rem;
+    background: url("../images/icon.png") no-repeat;
+    background-position: -1.88rem -0.95rem;
+}
+header nav  li{
+    margin: 0 0.27rem;
+    border-top: 1px solid #464646;
+    height:0.93rem;
+    line-height: 0.93rem;
+    font-size: 0.24rem;
+    text-align: center;
+}
+nav ul li a{
+    color: #fff;
+}
+header nav:hover ul{
+    display: block;
+}
+.banner {
+    position: relative;
+    z-index: 1;
+    height: 3.41rem;
+    overflow: hidden;
+}
+.banner ul{
+    width:400%;
+}
+.banner ul li{
+    float: left;;
+    width:25%;
+    height:100%;
+}
+.banner ul img{
+     width: 100%;
+     height: 100%;
+ }
+.banner ol{
+    position: absolute;
+    bottom: 0.15rem;
+    left:50%;
+    margin-left:-0.44rem;
+}
+.banner ol li{
+    float: left;
+    width:0.16rem;
+    height:0.16rem;
+    background: #fff;
+    margin:0 0.03rem;
+    border-radius: 50%;
+}
+.title{
+    margin: 0.33rem 0 0.31rem 0.2rem;
+    font-size: 0.24rem;
+    color: #4c4b4b;
+}
+.title span{
+    display: inline-block;
+    font-size: 0.26rem;
+}
+.title .allcourse{
+    display: inline-block;
+    width:0.29rem;
+    height:0.36rem;
+    background-position: 0 -0.95rem;
+    vertical-align: -0.06rem;
+}
+.pro,.mylist{
+    padding:0 0.2rem;
+    margin-bottom:1.83rem;
+}
+.pro .prolist{
+    position: relative;
+    width: 6rem;
+    height: 4.25rem;
+    border-radius: 0.06rem;
+    box-shadow: 2px 5px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    margin-bottom: 0.35rem;
+}
+.prolist .img{
+    width:6.1rem;
+    height:2.8rem;
+}
+.prolist p{
+    text-align: center;
+    font-size: 0.28rem;
+    line-height: 0.24rem;
+    color:#777777;
+    margin-top: 0.34rem;
+}
+.prolist .price{
+    color:red;
+    margin-top: 0.24rem;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left:50%;
+    margin-left: -3.2rem;
+    max-width: 6.4rem;
+    width:100%;
+    height:1.06rem;
+    border-top: 1px solid #d5d5d5;
+    background: #fff;
+}
+footer a{
+    float: left;
+    font-size: 0.16rem;
+    text-align: center;
+    color:#ababab;
+    width: calc( 100% / 3 );
+}
+footer i{
+    display: block;
+    width:0.46rem;
+    height:0.4rem;
+    margin:0.2rem auto 0.12rem;
+}
+footer .icon1{
+    background-position: 0 -1.64rem;
+}
+footer .icon2{
+    background-position: -0.88rem -1.64rem;
+}
+footer .icon3{
+    background-position: -1.64rem -1.64rem;
+}
+footer a:hover{
+    color: #198be5;
+}
+footer a:hover .icon1{
+    background-position: 0 -2.22rem;
+}
+footer a:hover .icon2{
+    background-position: -0.88rem -2.22rem;
+}
+footer a:hover .icon3{
+    background-position: -1.64rem -2.22rem;
+}
+/*mycourse*/
+.title .course{
+    display: inline-block;
+    width:0.27rem;
+    height:0.22rem;
+    background-position:-2.73rem -2.45rem ;
+    vertical-align: -0.03rem;
+}
+.mylist ul li{
+    padding:0 0.3rem;
+    height:2.88rem;
+    margin-bottom: 0.22rem;
+    background: #fff;
+    border-radius:10px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+}
+.mylist h3{
+    font-size: 0.32rem;
+    line-height: 0.74rem;
+    color:#383838;
+}
+.mylist dl{
+    font-size: 0.2rem;
+    line-height: 0.18rem;
+}
+.mylist dt {
+    width:2.5rem;
+    height:1.63rem;
+    margin-right: 0.25rem;
+}
+.mylist dt img{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+}
+.mylist dd{
+    font-size: 0.2rem;
+    margin-bottom:0.15rem;
+    line-height: 0.48rem;
+    color:#7b7b7b;
+}
+.mylist dd p{
+}
+.mylist dd b{
+    color: #222;
+}
+/*personal*/
+.my-login{
+    box-sizing: border-box;
+    padding-top: 1.3rem;
+    font-size: 0.24rem;
+    width:100%;
+    height:4.45rem;
+    text-align: center;
+    background: url("../images/bg.png") no-repeat top center;
+    background-color: #188ae4;
+
+}
+.my-login .loginpic{
+    display: block;
+    margin: 0 auto 0.35rem;
+    width:1.2rem;
+    height:1.2rem;
+    background-position: 0 -2.76rem;
+}
+.my-login .loginname{
+    color:#188ae4;
+    font-weight: bold;
+    height:0.4rem;
+    padding:0 0.1rem;
+    border-radius: 6px;
+    background: #fff;
+}
+.about ul{
+    padding: 0.2rem 0.5rem 0 0.5rem;
+    background: #fff;
+}
+.about ul li{
+    font-size: 0.24rem;
+    color:#383838;
+    height:1.15rem;
+    line-height: 1.15rem;
+    border-bottom: 1px solid #ebebeb;
+}
+.problem{
+    display: inline-block;
+    width:0.37rem;
+    height:0.37rem;
+    background-position: -2.63rem 0;
+    vertical-align: middle;
+}
+.us{
+    display: inline-block;
+    width:0.36rem;
+    height:0.37rem;
+    background-position: -2.65rem -0.52rem;
+    vertical-align: middle;
+}
+.pass{
+    display: inline-block;
+    width:0.36rem;
+    height:0.37rem;
+    background-position: -2.69rem -1.04rem;
+    vertical-align: middle;
+}
+.arrow{
+    display: inline-block;
+    float: right;
+    margin-top:0.55rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    background-position: -2.76rem -1.56rem;
+}
+/*region*/
+.tbar{
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 1.1rem;
+    color:#fff;
+    height:1.1rem;
+    background: #252525;
+}
+.tbar span{
+    margin-left: -0.55rem;
+
+}
+.back{
+    display:block;
+    float: left;
+    margin: 0.37rem 0 0 0.2rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    vertical-align: middle;
+    background-position: -2.65rem -1.95rem;
+}
+.region{
+    font-size: 0;
+    text-align: center;
+
+}
+.region .edit{
+    display: inline-block;
+    width:1.17rem;
+    height:1.17rem;
+    background-position: -1.42rem -2.76rem;
+    margin:1.15rem 0 1rem 0;
+}
+.form-group input{
+    font-size: 0.24rem;
+    color:#777;
+    padding-left: 0.34rem;
+    padding-right:0.34rem;
+    width:4.95rem;
+    height:0.8rem;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 4px 6px rbga(0,0,0,0,4);
+    margin: 0.2rem 0;
+}
+
+.form-inline{
+    display: inline-block;
+    text-align: center;
+}
+.form-inline .yzm{
+    width:2.47rem;
+}
+.form-inline .yzmpic{
+    width:2.4rem;
+    padding:0;
+    border: 1px solid #188ae4;
+    background: #d8edfe;
+    color: #188ae4;
+    font-weight: bold;
+    margin-left: 0.09rem;
+}
+.btn{
+    display: block;
+    border-radius:10px;
+    margin:0 auto;
+    font-size: 0.3rem;
+    color: #fff;
+    width:5.63rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    background: #188ae4;
+}
+.region .xy{
+    text-align: left;
+    width: 5.63rem;
+    margin:0 auto;
+}
+.region .check{
+    display: inline-block;
+    width:0.3rem;
+    height:0.3rem;
+    border:1px solid #188ae4;
+    background: #fff;
+    vertical-align: middle;
+}
+.region div span{
+    display: inline-block;
+    font-size: 0.24rem;
+    line-height: 0.5rem;
+    color:#188ae4;
+    vertical-align: middle;
+}
+.reg,.fpass{
+    font-size: 0.24rem;
+    color: #188ae4;
+}
+.reg a{text-align: left;}
+

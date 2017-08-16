@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <style>
+        *{margin: 0;padding: 0;}
+        .con{
+            width: 100%;
+        }
+        .con a{
+            display: block;
+            float: left;
+            box-sizing: border-box;
+            border-left:1px solid red;
+            width:25%;
+            height:200px;
+            margin:0;
+        }
+        .list1{
+            background: url("../images/iphone_upgrade_large.jpg") no-repeat top center;
+        }
+        .list2{
+            background: url("../images/watch_large.jpg") no-repeat top center;
+        }
+        @media only screen and (max-width: 1068px){
+            .con a{
+                width:50%;
+            }
+            .list1{
+                background-image: url("../images/iphone_upgrade_medium.jpg");
+            }
+            .list2{
+                background-image: url("../images/watch_medium.jpg");
+            }
+        }
+        @media only screen and (max-width: 735px){
+            .con a{
+                width:100%;
+            }
+            .list1{
+                background-image: url("../images/iphone_upgrade_medium.jpg");
+            }
+            .list2{
+                background-image: url("../images/watch_medium.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con clearfix">
+        <a href="#" class="list1"></a>
+        <a href="#" class="list2"></a>
+        <a href="#" class="list1"></a>
+        <a href="#" class="list2"></a>
+
+    </div>
+</body>
+</html>

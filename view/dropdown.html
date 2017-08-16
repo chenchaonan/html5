@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link href="../css/reset.css" type="text/css" rel="stylesheet">-->
+    <style>
+        .container{
+            width:1200px;
+            margin:0 auto;
+            margin-top:50px;
+        }
+        .container ul{
+            margin-left: -25px;
+        }
+        .container li{
+            float: left;
+            width:218px;
+            height:258px;
+            margin-left:25px;
+            background: #a3a3a3;
+            border:1px solid transparent;
+        }
+        .container ul:after{
+            display: block;
+            content: "";
+            clear: both;
+
+        }
+        .container li:hover{
+            border-color:red;
+            /*border:1px solid red;*/
+            /*box-sizing: border-box;*/
+            /*outline: 1px solid red;*/
+        }
+        @media screen and (max-width: 800px){
+           .container{
+               width:600px;
+               background: red;
+               margin:0 auto;
+               margin-top:50px;
+           }
+            .container li{
+                width:180px;
+                height:180px;
+                margin::25px 0 0 25px;
+            }
+
+        }
+
+        .cs{
+            font-size: 0;
+        }
+        .cs img{
+            outline: 2px solid red;
+
+        }
+        .cs a{
+            font-size: 38px;
+            background: #ededed;
+            padding:4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <!--after-->
+    </ul>
+</div>
+<div class="cs">
+    <img src="../images/banner0.png">
+    <img src="../images/banner0.png">
+</div>
+
+</body>
+</html>

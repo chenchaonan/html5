@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D转换transform</title>
+    <style>
+        .parent{width: 300px;height: 300px;background-color: red;}
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /*transform: translate(100px,100px);*/
+            /*transition: transform 1s linear 2s;*/
+            transition: height 1s linear 0s,transform 0.6s linear 1s;
+            /*
+ transition
+ 第一个值 ：要过渡的css属性
+ 第二个值 ：过渡所需时间
+ 第三个值 ：过渡方式
+ 第四个值 ：过渡延迟时间（过多少时间执行这个过渡效果）
+ 一个过渡属性支持多种过渡样式
+ transition: transform 1s linear 3s,height 2s linear 0s;
+            */
+        }
+        .parent:hover .son{
+            height: 50px;
+            transform: skew(10deg,10deg);
+        }
+        /*.parent:hover .son{
+            transform: scale(1,2);
+            !*一个参数 是指宽和高  两个参数中的第一个参数指宽，第二个参数指高*!
+            !*以中心点放大 *!
+        }*/
+        /*.parent:hover .son{
+           transform: translate(50px,100px);
+       }*/
+        /*.parent:hover .son{
+            transform: rotate(30deg);
+            -ms-transform: rotate(30deg);		!* IE 9 *!
+            -webkit-transform: rotate(30deg);	!* Safari and Chrome *!
+            -o-transform: rotate(30deg);		!* Opera *!
+            -moz-transform: rotate(30deg);		!* Firefox *!
+            !*围绕这几的中心点旋转*!
+            !*deg 角度单位*!
+        }*/
+
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son">向上</div>
+</div>
+</body>
+</html>

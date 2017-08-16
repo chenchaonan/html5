@@ -1,0 +1,223 @@
+html{
+    /*设计稿为640px时，根目录的字体大小为100px，这个设计稿中每一个模块的宽度都会去除100，得到一个rem的倍数值*/
+    font-size: 100px;
+}
+@media screen and (max-width: 414px){
+    html{
+        font-size: 64.6875px;
+    }
+}
+@media screen and (max-width: 412px){
+    html{
+        font-size: 64.375px;
+    }
+}
+@media screen and (max-width: 375px){
+    html{
+        font-size: 58.59375px;
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 50px;
+    }
+}
+html,body{/*块*/
+    /*overflow: hidden;!*超出部分隐藏*!*/
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;/*html和body继承设备宽*/
+    height: 100%;
+    max-width: 640px;
+    background-color: #f8f8f8;
+}
+header{
+    position: relative;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.35);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.35);
+    box-shadow: 0 2px 5px rgba(0,0,0,.35);
+    height: 1.12rem;
+    background-color: #2a2a2a;
+}
+header .logo,header nav .icon,header nav ul:before,.title .icon,footer .icon{
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-size: 1.72rem 2.41rem;
+    /*在用rem进行布局的时候，所有盒子的大小需要除参照值，背景图片的宽高也要除参照值*/
+}
+header .logo{
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin: 0.23rem 0 0 0.16rem;
+    width: 1.35rem;
+    height: 0.52rem;
+}
+header nav{
+    float: right;
+    margin: 0.4rem 0.23rem 0 0;
+    width: 0.36rem;
+    height: 0.32rem;
+}
+header nav .icon{
+    display: block;
+    width: 0.36rem;
+    height: 0.32rem;
+    background-position: 0 -0.81rem;
+}
+header nav ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-top: 1.04rem;
+    background-color: #2a2a2a;
+}
+header nav ul:before{
+    content: "";
+    position: absolute;
+    top: 0.48rem;
+    right: 0.3rem;
+    width: 0.2rem;
+    height: 0.18rem;
+    background-position: -1.52rem 0;
+}
+header nav li{
+    margin: 0 27px;
+    border-top: 1px solid #464646;
+    height: 0.93rem;
+    line-height: 0.93rem;
+    font-size: 0.24rem;
+    text-align: center;
+}
+header nav a{
+    color: #e0e0df;
+}
+header nav:hover ul{
+    display: block;
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+    height: 3.41rem;
+}
+.banner ul{
+    width: 400%;
+}
+.banner ul li{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.banner ul img{
+    width: 100%;
+    height: 100%;
+}
+.banner ol{
+    position: absolute;
+    bottom: 0.15rem;
+    left: 50%;
+    margin-left: -0.44rem;
+}
+.banner ol li{
+    float: left;
+    margin: 0 0.03rem;
+    border-radius: 50%;
+    width: 0.16rem;
+    height: 0.16rem;
+    background-color: #ffffff;
+}
+.title{
+    margin: 0.33rem 0 0.31rem 0.2rem;
+    font-size: 0.24rem;
+    color: #4c4b4b;
+}
+.title .icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.13rem;
+    width: 0.3rem;
+    height: 0.35rem;
+    background-position: -0.69rem -0.81rem;
+}
+.index-list{
+    padding-bottom: 1.38rem;
+}
+
+.index-list li{
+    margin: 0 auto 0.45rem;
+    border-radius: 3px;/*可以用px*/
+    width: 6.02rem;
+    height: 4.25rem;
+    text-align: center;
+    font-size: 0.28rem;
+    box-shadow: 0 5px 6px rgba(178,178,178,0.75);
+    background-color: #fff;
+}
+.index-list li img{
+    width: 100%;
+    height: 2.8rem;
+}
+.index-list li h3{
+    margin-top: 0.2rem;
+    color: #777;
+    line-height: 0.54rem;
+    font-weight: normal;
+}
+.index-list li p{
+    line-height: 0.46rem;
+    color: #ed3a3a;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3.2rem;
+    border-top: 1px solid #d5d5d5;
+    max-width: 6.4rem;
+    width: 100%;
+    height: 1.06rem;
+    background-color: #fff;
+}
+footer a{
+    float: left;
+    width: calc(100% / 3);
+    font-size: 0.16rem;
+    color: #ababab;
+    text-align: center;
+}
+footer .icon{
+    display: block;
+}
+footer .icon1{
+    margin: 0.2rem auto 0.15rem;
+    width: 0.46rem;
+    height: 0.32rem;
+    background-position: 0 -1.38rem;
+}
+footer .icon2{
+    margin: 0.16rem auto 0.12rem;
+    width: 0.40rem;
+    height: 0.39rem;
+    background-position: -0.69rem -1.38rem;
+}
+footer .icon3{
+    margin: 0.17rem auto 0.13rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background-position: -1.36rem -1.38rem;
+}
+footer a:hover{
+    color: #198be5;
+}
+footer a:hover .icon1{
+    background-position: 0 -2.03rem;
+}
+footer a:hover .icon2{
+    background-position: -0.69rem -2.03rem;
+}
+footer a:hover .icon3{
+    background-position: -1.36rem -2.03rem;
+}

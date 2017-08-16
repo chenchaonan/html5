@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        @keyframes move {
+            0% {left: 0;}
+            100% {left: 300px;}
+            /*关键帧   0% 关键帧选择器 */
+        }
+        div{
+            position: absolute;
+            left: 0;width: 100px;height: 100px;
+            background-color: red;
+        }
+        input:nth-of-type(1):focus~div{
+            animation: move 2s linear 0s infinite reverse forwards;
+            /*
+                第一个值 动画名称
+                第二个值 动画执行的时间 （秒 s）
+                第三个值 一个动画完成的周期（ease 默认值 低速开始 然后加快 临近结束速度再次变慢）
+                第四个值 动画延迟的时间 过多久在这个动画才会执行
+                第五个值 动画执行的次数 设置具体数值 “3” 还可以设置持续  infinite
+                第六个值 动画执行的开始方向 （单次执行动画无效）
+                第七个值 forwards动画执行完成后的样子（不回到初始状态 而停留在 100% 的样式）
+                第八个值 动画的暂停或者继续运行 paused
+            */
+        }
+        input:nth-of-type(2):focus~div{
+            animation: paused;
+        }
+
+    </style>
+</head>
+<body>
+<input type="button" value="点击">
+<input type="button" value="暂停">
+<div>
+
+</div>
+</body>
+</html>
